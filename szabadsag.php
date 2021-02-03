@@ -1,0 +1,1 @@
+<p>...szabadság napok évente, személyenként</p>
