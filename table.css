@@ -1,0 +1,8 @@
+.tbl-container{
+    max-height: 600px;
+    overflow: auto;
+}
+thead, th {
+    position: sticky;
+    top:0;
+}

@@ -1,5 +1,7 @@
 <?php
  session_start();
+ //print_r($_SESSION);
+ require_once "config.php";
 ?>  
 
 <!DOCTYPE html>
@@ -21,6 +23,7 @@
   <link href="css/simple-sidebar.css" rel="stylesheet">
   <link rel="stylesheet" href="myStyle.css">
   <script src="menu.js"></script>
+  <link rel="stylesheet" href="table.css">
 
 </head>
 
@@ -59,21 +62,7 @@
                 <?=isset($_SESSION['user'])? $_SESSION['user'] : (isset($_SESSION['msg'])? $_SESSION['msg'] :"Nem vagy bejelentkeztel!")?>
                 <span class="sr-only">(current)</span>
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
+            </li>           
           </ul>
         </div>
       </nav>

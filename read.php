@@ -18,7 +18,7 @@ if(isset($_GET['ujdatum'])){
         $ev=intval(substr($_GET['ujdatum'],0,4));
         $ho=intval(substr($_GET['ujdatum'],5));
         // előállítjuk a bemenő paramétereket és meghívjuk a függvényt:
-        $datumokTombje =getDateArr($_GET['datum']);
+        $datumokTombje =getDateArr($_GET['ujdatum']);
         $sql="";
         foreach($datumokTombje as $datum)
             $sql.="insert into jelenlet (select azonosito ,'{$datum}',480,'N' from szemelyek);";
